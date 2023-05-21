@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ****GLOBAL META TAGS**** -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ****CDNJS LIBRARIES**** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ****SITE META TAGS**** -->
+  <meta name="author" content="Abdujalilov Ismoil" />
+  <meta name="description" content="150 words" />
+  <meta name="og:title" content="Site sarlavhasi" />
+  <meta name="og:description" content="Site haqida malumot" />
+  <meta name="og:image" content="Site rasmi" />
+  <meta name="og:site_name" content="Site nomi" />
+  <!-- ****MAIN CSS**** -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- ****BOOTSRAP LINK**** -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <title>Timer</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="section gap-5 mt-5">
+      <div class="timer d-flex gap-5 fs-1">
+        <div class="hour-text text-light bg-danger py-3 px-5">
+          <div class="hour text-center">00</div>
+          <div class="hour-title fs-5">
+            Hour
+          </div>
+        </div>
+        <div class="minute-text text-light bg-danger py-3 px-5">
+          <div class="minute text-center">00</div>
+          <div class="minute-title fs-5">
+            Minute
+          </div>
+        </div>
+        <div class="second-text text-light bg-danger py-3 px-5">
+          <div class="second text-center">00</div>
+          <div class="minute-title fs-5">
+            Second
+          </div>
+        </div>
+        <div class="milli-secund-text text-light bg-danger py-3 px-5">
+          <div class="milli-secund text-center">00</div>
+          <div class="minute-title fs-5">
+            Milli-Second
+          </div>
+        </div>
+      </div>
+      <form class="form">
+        <button type="button" class="btn btn-success fs-4" data-start>Start</button>
+        <button type="button" class="btn btn-warning fs-4 text-light" data-stop>Stop</button>
+        <button type="button" class="btn btn-danger fs-4" data-reset>Reset</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- ****BOOTSRAP JS***** -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.section {
+  @include flex(flex, center, center, column);
+  min-height: 80vh;
+
+  .form {
+    @include flex(flex, center, center, row);
+    gap: 40px;
+  }
+}

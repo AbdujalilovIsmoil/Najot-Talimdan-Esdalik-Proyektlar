@@ -1,0 +1,139 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Roboto';
+  color: var(--card-text-color);
+  overflow: hidden;
+}
+
+:root {
+  --card-text-color: #ffff;
+  --card-first-bg-color: #FCC524;
+  --card-second-bg-color: #55DBE6;
+  --card-third-bg-color: #44A8FC;
+  --card-fourth-bg-color: #BECDDB;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 10px auto 10px auto 10px auto;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  margin: 10px 0 10px 0;
+
+}
+
+.card__list_item {
+  height: 100%;
+  padding: 40px;
+  width: 290px;
+}
+
+.card__list_item:nth-child(1) {
+  background-color: var(--card-first-bg-color);
+}
+
+.card__list_item:nth-child(2) {
+  background-color: var(--card-second-bg-color);
+}
+
+.card__list_item:nth-child(3) {
+  background-color: var(--card-third-bg-color);
+}
+
+.card__list_item:nth-child(4) {
+  background-color: var(--card-fourth-bg-color);
+}
+
+.card__list_item-img {
+  height: 175px;
+  width: 175px;
+  margin: 0 auto;
+}
+
+.card__list_item_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 70px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.card__list_item-paragraph {
+  font-size: 14px;
+}
+
+.card__list_item_title-span {
+  font-size: 16px;
+}
+
+.card__list_item-paragraph {
+  padding: 10px 0;
+}
+
+.fa-check {
+  margin: 0 5px 0 0;
+}
+
+.card__list_item-link {
+  border: 2px solid var(--card-text-color);
+  padding: 10px 50px;
+  display: inline-block;
+  margin: 20px 0 0 0;
+  color: var(--card-text-color);
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+.card__list_item-link:hover {
+  background-color: var(--card-text-color);
+}
+
+.card__list_item-link.link1:hover {
+  color: var(--card-first-bg-color);
+}
+
+.card__list_item-link.link2:hover {
+  color: var(--card-second-bg-color);
+}
+
+.card__list_item-link.link3:hover {
+  color: var(--card-third-bg-color);
+}
+
+.card__list_item-link.link4:hover {
+  color: var(--card-fourth-bg-color);
+}

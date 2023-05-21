@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+label {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+
+.bi-eye {
+  visibility: hidden;
+}
+
+.bi-eye.eye {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.bi-eye-slash {
+  cursor: pointer;
+}
+
+.bi-exclamation-circle-fill {
+  visibility: hidden;
+}
+
+.bi-check-circle-fill {
+  visibility: hidden;
+}
+
+label.error .form-control {
+  border: 1px solid red;
+}
+
+label.error .bi-exclamation-circle-fill {
+  visibility: visible;
+}
+
+label.success .form-control {
+  border: 1px solid green;
+}
+
+label.success .bi-check-circle-fill {
+  visibility: visible;
+}/*# sourceMappingURL=main.css.map */

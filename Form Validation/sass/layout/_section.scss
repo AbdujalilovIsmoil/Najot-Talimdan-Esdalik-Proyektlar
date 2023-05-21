@@ -1,0 +1,46 @@
+label{
+  position: relative;
+}
+
+i{
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}
+
+.bi-eye{
+  visibility: hidden;
+}
+
+.bi-eye.eye{
+  cursor: pointer;
+  visibility: visible;
+}
+
+.bi-eye-slash{
+  cursor: pointer;
+}
+
+.bi-exclamation-circle-fill{
+  visibility: hidden;
+}
+
+.bi-check-circle-fill{
+  visibility: hidden;
+}
+
+label.error .form-control{
+  border: 1px solid red;
+}
+
+label.error .bi-exclamation-circle-fill{
+  visibility: visible;
+}
+
+label.success .form-control{
+  border: 1px solid green;
+}
+
+label.success .bi-check-circle-fill{
+  visibility: visible;
+}

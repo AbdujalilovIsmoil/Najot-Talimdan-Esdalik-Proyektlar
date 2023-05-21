@@ -1,0 +1,110 @@
+/* ****BASIC TO THE CODES START**** */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --btn-bg-color: #3D8168;
+  --btn-bg-hover-color: #1b4d3a;
+  --text-color: #2F3336;
+  --paragraph-color: #979797;
+  --link-color: #B4B4B6;
+  --bg-color: #F2E9E2;
+  --card-color: #ffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Fraunces';
+}
+
+/* ****BASIC TO THE CODES END**** */
+.card__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card__box_paragraph-first {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--link-color);
+  font-size: 13px;
+}
+
+.card__box-title {
+  color: var(--text-color);
+}
+
+.card__box-paragraph_second {
+  color: var(--paragraph-color);
+  font-family: sans-serif;
+}
+
+.card__box .card__box-img {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+  height: 430px;
+}
+
+.card__box:nth-child(2) {
+  width: 300px;
+  background-color: var(--card-color);
+  height: 430px;
+  border-radius: 0 10px 10px 0;
+  padding: 30px;
+}
+
+.card__box_content {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.card__box_content-title {
+  color: var(--btn-bg-color);
+}
+
+.card__box_content-small {
+  font-size: 15px;
+  color: var(--paragraph-color);
+  text-decoration: line-through;
+  font-family: sans-serif;
+}
+
+.card__box_link {
+  background-color: var(--btn-bg-color);
+  font-size: 15px;
+  color: var(--card-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-radius: 10px;
+  transition: all .3s linear;
+  font-family: sans-serif;
+}
+
+.card__box_link:hover {
+  background-color: var(--btn-bg-hover-color);
+}

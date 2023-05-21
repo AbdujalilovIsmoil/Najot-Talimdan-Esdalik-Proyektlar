@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(3, 133, 255);
+}
+
+.section__cloud {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+}
+
+.section__cloud-img {
+  width: 200px;
+}
+
+.section__cloud-img:nth-child(1) {
+  animation: cloud-first infinite alternate 5s linear;
+  -webkit-animation: cloud-first infinite alternate 20s linear;
+}
+.section__cloud-img:nth-child(2) {
+  animation: cloud-second infinite alternate 30s linear;
+  -webkit-animation: cloud-second infinite alternate 30s linear;
+}
+.section__cloud-img:nth-child(3) {
+  animation: cloud-third infinite alternate 20s linear;
+  -webkit-animation: cloud-third infinite alternate 20s linear;
+}
+.section__cloud-img:nth-child(4) {
+  animation: cloud-fourth infinite alternate 15s linear;
+  -webkit-animation: cloud-fourth infinite alternate 15s linear;
+}
+.section__cloud-img:nth-child(5) {
+  animation: cloud-five infinite alternate 20s linear;
+  -webkit-animation: cloud-five infinite alternate 20s linear;
+}
+.section__cloud-img:nth-child(6) {
+  animation: cloud-six infinite alternate 25s linear;
+  -webkit-animation: cloud-six infinite alternate 25s linear;
+}
+
+@keyframes cloud-first {
+  from {
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+    -moz-transform: translateX(500px);
+    -ms-transform: translateX(500px);
+    -o-transform: translateX(500px);
+}
+}
+@keyframes cloud-second {
+  from {
+    transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+}
+}
+@keyframes cloud-third {
+  from {
+    transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+    -moz-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    -o-transform: translateX(-600px);
+}
+}
+@keyframes cloud-fourth {
+  from {
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+}
+}
+@keyframes cloud-five {
+  from {
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
+}
+@keyframes cloud-six{
+  from {
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+}
+}
+
+.section__airplane-img {
+  width: 300px;
+  transform:  translate(-150px,0);
+  -webkit-transform:  translate(-150px,0);
+  -moz-transform:  translate(-150px,0);
+  -ms-transform:  translate(-150px,0);
+  -o-transform:  translate(-150px,0);
+  animation: airplane 10s linear infinite;
+  -webkit-animation: airplane 15s linear infinite;
+}
+
+@keyframes airplane {
+100%{
+  transform: translate(1450px,-650px) rotate(-10deg);
+  -webkit-transform: translate(1450px,-650px) rotate(-10deg);
+  -moz-transform: translate(1450px,-650px) rotate(-10deg);
+  -ms-transform: translate(1450px,-650px) rotate(-10deg);
+  -o-transform: translate(1450px,-650px) rotate(-10deg);
+}
+}

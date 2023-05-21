@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #293462;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #FFF1C1;
+  height: 100px;
+  width: 150px;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  animation: animate 1s linear infinite alternate;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  border: 10px solid #FFF1C1;
+  width: 85px;
+  border-right-color: transparent;
+  height: 60px;
+  bottom: 40px;
+  left: -50px;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  border: 10px solid #FFF1C1;
+  width: 85px;
+  border-left-color: transparent;
+  height: 60px;
+  bottom: 40px;
+  right: -50px;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.box {
+  margin: 20px;
+  position: relative;
+}
+
+.small {
+  height: 10px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: #FE5F55;
+  margin: 10px 0;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  background-color: #FE5F55;
+  border-radius: 50%;
+  right: 0;
+  top: -30px;
+}
+
+@keyframes animate {
+  to{
+    transform: translateY(-10px);
+  }
+  from{
+    transform: translateY(10px);
+  }
+}

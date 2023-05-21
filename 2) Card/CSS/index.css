@@ -1,0 +1,284 @@
+/* ****BASIC TO THE CODES START**** */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --first-title-color: #6ACC9D;
+  --second-title-color: #7E7E7E;
+  --background-color: #97D3E4;
+  --link-color: #000000;
+  --box-background-color: #ffff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* ****BASIC TO THE CODES END**** */
+
+/* ****CARD TO THE CODES START**** */
+
+.section__title_first {
+  background-color: var(--first-title-color);
+  color: var(--box-background-color);
+  height: 100px;
+  line-height: 90px;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+.section__container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+  margin: 25px 0 0 0;
+}
+
+.section__box {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  background-color: var(--box-background-color);
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 7.5px var(--first-title-color);
+  transition: all .2s linear;
+}
+
+.section__box:hover {
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.section__box:hover .section__box_title {
+  color: var(--box-background-color);
+  transition: all .2s linear;
+
+}
+
+.section__box:hover .section__box_paragraph {
+  color: var(--box-background-color);
+  transition: all .2s linear;
+}
+
+.section__box:hover i {
+  color: var(--box-background-color);
+  transition: all .2s linear;
+}
+
+.section__box:hover .section__box_btn {
+  background-color: transparent;
+  color: var(--box-background-color);
+  border: 1px solid var(--box-background-color);
+  transition: all .2s linear;
+}
+
+.section__box:hover .section__box_btn:hover {
+  background-color: var(--box-background-color);
+  color: var(--first-title-color);
+  transition: all .2s linear;
+}
+
+.section__box_img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section__box_title {
+  font-family: sans-serif;
+  margin: 15px 0 10px 0;
+  transition: all .2s linear;
+}
+
+.section__box_paragraph {
+  font-family: sans-serif;
+  color: var(--second-title-color);
+  margin: 10px 0 15px 0;
+  transition: all .2s linear;
+}
+
+.section__box_paragraph.active {
+  color: var(--link-color);
+  transition: all .2s linear;
+}
+
+.section__box_btn {
+  background-color: var(--link-color);
+  color: var(--box-background-color);
+  font-family: sans-serif;
+  padding: 10px 70px;
+  border-radius: 50px;
+  transition: all .3s linear;
+  border: 1px solid var(--link-color);
+  margin: 15px 0 0 0;
+  display: inline-block;
+  transition: all .2s linear;
+}
+
+.section__box_btn:hover {
+  background-color: transparent;
+  color: var(--link-color);
+}
+
+.section__title_second {
+  background-color: var(--second-title-color);
+  color: var(--box-background-color);
+  height: 90px;
+  width: 100%;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  margin: 52px 0 0 0;
+  transition: all .2s linear;
+}
+
+/* ****CARD TO THE CODES END**** */
+
+/* ****RESPONSIVE TO THE CODES START**** */
+@media only screen and (max-width: 1250px) {
+  .section__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-content: center;
+    margin: 25px 0 0 0;
+  }
+
+  .section__box {
+    width: 500px;
+    height: 400px;
+    background-color: var(--box-background-color);
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 7.5px var(--first-title-color);
+    transition: all .2s linear;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section__title_second {
+    background-color: var(--second-title-color);
+    color: var(--box-background-color);
+    height: 100px;
+    width: 100%;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin: 45px 0 0 0;
+    transition: all .2s linear;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .section__title_first {
+    background-color: var(--first-title-color);
+    color: var(--box-background-color);
+    height: 100px;
+    width: 100%;
+    font-size: 35px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .section__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    justify-content: center;
+    margin: 25px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .section__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    justify-content: center;
+    margin: 25px 0 0 0;
+  }
+
+  .section__box {
+    width: 300px;
+    height: 400px;
+    background-color: var(--box-background-color);
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 7.5px var(--first-title-color);
+    transition: all .2s linear;
+  }
+}
+
+@media only screen and (max-width: 420px) {}
+
+@media only screen and (max-width: 319px) {
+  .section__title_second {
+    background-color: var(--second-title-color);
+    color: var(--box-background-color);
+    height: 150px;
+    width: 100%;
+    font-size: 35px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin: 45px 0 0 0;
+    transition: all .2s linear;
+  }
+
+  .section__title_first {
+    background-color: var(--first-title-color);
+    color: var(--box-background-color);
+    height: 150px;
+    width: 100%;
+    font-size: 35px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+  }
+}
+
+/* ****RESPONSIVE TO THE CODES END**** */

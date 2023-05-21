@@ -1,0 +1,43 @@
+.section {
+  margin: 60px 0 0 0;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 50px;
+    &-box{
+      background-color: $section-bg-color;
+      height: 200px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .section {
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .section {
+    &__container {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0 10px;
+  }
+} 
